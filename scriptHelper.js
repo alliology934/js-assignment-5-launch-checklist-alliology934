@@ -14,15 +14,39 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                 </ol>
                 <img src="">
    */
-}
+};
 
 function validateInput(testInput) {
    
-}
+    if (testInput === "") {
+        return "Empty";
+    } else if (isNaN(testInput)) {
+        return "Not a Number";
+    } else {
+        return "Is a Number";
+    };
+
+};
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    
-}
+    // const faultyItems = document.getElementById("faultyItems");
+    // return "TESTING!!!!!!";
+    // if (fuelLevel < 10000) {
+    //     faultyItems.visible = true;
+    //     faultyItems.innerHTML = `
+    //     <div  id="faultyItems" data-testid="faultyItems">
+    //     <ol>
+    //         <li id="pilotStatus" data-testid="pilotStatus">Pilot ${pilot} is ready for launch</li>
+    //         <li id="copilotStatus" data-testid="copilotStatus">Co-pilot ${copilot} is ready for launch</li>
+    //         <li id="fuelStatus" data-testid="fuelStatus">Fuel level too low for launch</li>
+    //         <li id="cargoStatus" data-testid="cargoStatus">Cargo mass too high for launch</li>
+    //     </ol>
+    // </div>
+    //     `
+    // };
+
+};
 
 async function myFetch() {
     let planetsReturned;
